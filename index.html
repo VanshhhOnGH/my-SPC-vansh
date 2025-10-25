@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify- Web Player:Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="sidebar">
+
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+
+                <div class="option">
+                    <div class="lib-option nav-option">
+                        <img src="./assets/library_icon.png">
+                        <a href="#">Your Library</a>
+                    </div>
+
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">Let's find some podcasts to follow</p>
+                        <p class="box-p2">We'll keep you updated on new episodes</p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="./assets/backward_icon.png" class="hide">
+                    <img src="./assets/forward_icon.png">
+                </div>
+                <div class="sticky-nav-option">
+
+                    <button class="badge nav-item hide">Explore Premium</button>
+                    <button class="badge nav-item dark-badge"><i class="fa-regular fa-circle-down"
+                            style="margin-right: 5px;"></i> Install
+                        App </button> <i class="fa-regular fa-user nav-item"></i>
+                </div>
+
+            </div>
+
+
+            <h2>Recently Played</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67616d00001e028863bc11d2aa12b54f5aeb36" class="card-img">
+                    <p class="card-title">Blinding Lights</p>
+                    <p class="card-info"> By The Weeknd</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67616d00001e028ad8f5243d6534e03b656c8b" class="card-img">
+                    <p class="card-title">Starboy</p>
+                    <p class="card-info"> By The Weeknd</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67616d0000b27368ea745afe88e9753b545e7c" class="card-img">
+                    <p class="card-title">Namo-Namo-Kedarnath</p>
+                    <p class="card-info">By Amit Trivedi</p>
+                </div>
+            </div>
+
+
+            <h2>Trending now near you</h2>
+            <div class="cards-container">
+
+                <div class="card">
+                    <img src="./assets/card2img.jpeg" class="card-img">
+                    <p class="card-title">Mahiye Jinna So...</p>
+                    <p class="card-info">By Darshan Raval & Youngveer</p>
+                </div>
+
+
+
+                <div class="card">
+                    <img src="./assets/card3img.jpeg" class="card-img">
+                    <p class="card-title">Mere Pass Tm Ho</p>
+                    <p class="card-info">By Rahat Fateh Ali Khan</p>
+                </div>
+
+
+                <div class="card">
+                    <img src="./assets/card4img.jpeg" class="card-img">
+                    <p class="card-title">Naa ready</p>
+                    <p class="card-info">Alter Ego</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67616d0000b2730504fdf58bae8cd52dd13047" class="card-img">
+                    <p class="card-title">Tere Bina</p>
+                    <p class="card-info">By AR rahman, Chinmayi</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273869a9b15675b514a06d2c049" class="card-img">
+                    <p class="card-title">Tm Ho Pass Mere</p>
+                    <p class="card-info">By AR rahman| Rockstar</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67616d0000b27368ea745afe88e9753b545e7c" class="card-img">
+                    <p class="card-title">Namo-Namo-Kedarnath</p>
+                    <p class="card-info">By Amit Trivedi</p>
+                </div>
+
+            </div>
+
+            <h2>Album featuring songs you like</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67616d00001e02ade87e5f9c3764f0a1e5df64" class="card-img">
+                    <p class="card-title">Cry for you</p>
+                    <p class="card-info">The Weeknd</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273ef0d4234e1a645740f77d59c" class="card-img">
+                    <p class="card-title">VIDA</p>
+                    <p class="card-info">Luis Fonsi</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67616d0000b2737fe4a82a08c4f0decbeddbc6" class="card-img">
+                    <p class="card-title">Changes</p>
+                    <p class="card-info">Justin Bieber</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67616d00001e024e31e0d38b89b8fb239d4fbf" class="card-img">
+                    <p class="card-title">One Thing</p>
+                    <p class="card-info">One Direction</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67706f000000029b2097d69be382766f5e80f8" class="card-img">
+                    <p class="card-title">Back to You</p>
+                    <p class="card-info">Selena Gomez</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67616d0000b2734fe297c018e495a97662e5ac" class="card-img">
+                    <p class="card-title">Attention</p>
+                    <p class="card-info">Charlie Puth</p>
+                </div>
+            </div>
+
+            <h2>Featured Charts </h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card1img.jpeg" class="card-img">
+                    <p class="card-title">Top 50-Global</p>
+                    <p class="card-info">Your daily updates of the most played ...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card5img.jpeg" class="card-img">
+                    <p class="card-title">Top songs-Global</p>
+                    <p class="card-info">Your weekly updates of the most played ...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card6img.jpeg" class="card-img">
+                    <p class="card-title">Top songs-India</p>
+                    <p class="card-info">Your weekly updates of the most played ...</p>
+                </div>
+            </div>
+
+            <h2>One Direction</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="https://i.scdn.co/image/289c7f686f5b78ceeb224453cf9a15697a678a79" class="card-img">
+                    <p class="card-title">Perfect</p>
+                    <p class="card-info">2015• Album</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67616d00001e022288e51936a9fdde73d22904" class="card-img">
+                    <p class="card-title">One Way or Another</p>
+                    <p class="card-info">2013• Single</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67616d00001e024a5584795dc73860653a9a3e" class="card-img">
+                    <p class="card-title">Up All Night</p>
+                    <p class="card-info">2012• Album</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67616d00001e02241e4fe75732c9c4b49b94c3" class="card-img">
+                    <p class="card-title">Made in the A.M</p>
+                    <p class="card-info">2015• (Deluxe Edition)</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da843f69bf62cf472d23e8435ac8"
+                        class="card-img">
+                    <p class="card-title">One Direction</p>
+                    <p class="card-info">Official Playlists</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67706f00000002e9ad3f9754c74453e746f1ef" class="card-img">
+                    <p class="card-title">This is One Direction</p>
+                    <p class="card-info">By Spotify</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP6Kd4XwaB76I4Mig-pAIY6NuaIXeC6Bq_Xg&s"
+                        class="card-img">
+                    <p class="card-title">All One Direction</p>
+                    <p class="card-info">Album</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR68BZYN1zE2m0NVjNy1YOsmY48FQ9AmzPsTg&s"
+                        class="card-img">
+                    <p class="card-title">Drag Me Down</p>
+                    <p class="card-info">2015• Album</p>
+                </div>
+            </div>
+
+            <h2>Editor's Pick</h2>
+            <div class="cards-container">
+
+                <div class="card">
+                    <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8477ef554ce79359be928fae5d"
+                        class="card-img">
+                    <p class="card-title">Bollywood Hits</p>
+                    <p class="card-info">Best Hindi & Bollywood Songs</p>
+                </div>
+
+
+
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuw9CFZtCvYInRSrLlGN9Ob2yVHBGt4Q5sLg&s"
+                        class="card-img">
+                    <p class="card-title">Party Songs</p>
+                    <p class="card-info">Bollywood Best Party Songs</p>
+                </div>
+
+
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/81Tw4klE3nL._USNaN_BL10_BG34,34,34_CLa%7CNaN,NaN%7C81Tw4klE3nL.jpg,81KvkEtJBZL.jpg,918xRUqnGBL.jpg,91Fervhn2UL.jpg%7C0,0,NaN,NaN+0,0,NaN,NaN+NaN,0,NaN,NaN+0,NaN,NaN,NaN+NaN,NaN,NaN,NaN.jpg"
+                        class="card-img">
+                    <p class="card-title">Sanam Re</p>
+                    <p class="card-info">By Arijit Singh</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://www.amusicsoft.com/images/spotify-music-converter/ranjha-jasleen-royal-spotify.jpg"
+                        class="card-img">
+                    <p class="card-title">Ranjha</p>
+                    <p class="card-info"> By Jasleen Royal</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://s.saregama.tech/image/c/fw_485/6/9c/93/bollywood-mashup-dd5112_1544176669.jpg"
+                        class="card-img">
+                    <p class="card-title">Bollywood Mashup</p>
+                    <p class="card-info">Relive the biggest tracks...</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://s.saregama.tech/image/c/fw_485/0/11/b3/bollywood-trending-world-music-day-2_1528128560.jpg"
+                        class="card-img">
+                    <p class="card-title">Bollywood Trending</p>
+                    <p class="card-info">The latest hits from Bollywood</p>
+                </div>
+
+            </div>
+
+            <div class="footer">
+                <div class="line">
+                    <div class="social_media">
+                        <ul>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </ul>
+
+                    </div>
+                    <div class="footer-links">
+                        <a href="#">Legal</a>
+                        <a href="#">Privacy Center</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Cookies</a>
+                        <a href="#">About Ads</a>
+                        <a href="#">Accessibility</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Creators</a>
+
+                    </div>
+
+                    <div class="creator">
+                        <p>2023 Spotify Clone by Vansh.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="music-player">
+        <div class="album">
+            <img src="https://i.scdn.co/image/ab67616d00001e028863bc11d2aa12b54f5aeb36" class="album-img">
+            <div class="album-info">
+                <p class="album-title">Blinding Lights</p>
+                <p class="album-artist">The Weeknd</p>
+
+            </div>
+
+        </div>
+
+        <div class="player">
+            <div class="player-control">
+
+                <img src="assets/player_icon1.png" class="player-control-icon">
+                <img src="assets/player_icon2.png" class="player-control-icon">
+                <img src="assets/player_icon3.png" class="player-control-icon1">
+                <img src="assets/player_icon4.png" class="player-control-icon">
+                <img src="assets/player_icon5.png" class="player-control-icon">
+
+            </div>
+
+            <div class="playback-bar">
+
+                <span class=" time">00:00</span>
+                <input type="range" min="0" max="100" class="progress-bar">
+                <span class=" time">03:20</span>
+
+            </div>
+        </div>
+        <div class="control">
+            <i class="fa-solid fa-music" id="ctrl"></i>
+            <i class="fa-solid fa-layer-group" id="ctrl"></i>
+            <i class="fa-solid fa-computer" id="ctrl"></i>
+            <i class="fa-solid fa-volume-high" id="ctrl"></i>
+            <input type="range" min="0" max="100" class="volume-bar">
+            <i class="fa-solid fa-picture-in-picture" id="ctrl"></i>
+            <i class="fa-solid fa-expand" id="ctrl"></i>
+
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
